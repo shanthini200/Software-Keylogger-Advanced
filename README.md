@@ -28,31 +28,50 @@ This project is for **educational purposes only**. Unauthorized use of such soft
 - Libraries:  
   - `pynput`  
   - `smtplib`  
-  - `email`  
+  - `email`
 
-Install the required libraries via:  
+## Setup Instructions for Ethical Keylogger (Educational Use Only)
 
-```bash  
-pip install pynput  
-```  
+### Prerequisites
+1. **Python Installation**: Ensure Python 3.x is installed on your system. You can download it from [python.org](https://www.python.org/).
+2. **Required Libraries**: Install the necessary Python libraries by running:
+   ```bash
+   pip install pynput
+   ```
 
-## Installation and Usage  
+### Setting Up the Project
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
 
-1. Clone the repository or download the code:  
+2. **Configure Email Settings**:
+   Open the script file (`keylogger.py`) and update the following placeholders:
+   - `email_user`: Your sender email address.
+   - `email_password`: App password for the sender's email.
+   - `email_send`: The recipient's temporary email address (e.g., Maildrop).
 
-    ```bash  
-    git clone <repository-url>  
-    ```  
+3. **Enable App Passwords** (if applicable):
+   - For **Outlook** users, refer to [Outlook App Password Setup](https://support.microsoft.com/).
+   - For **Gmail** users, enable "App Passwords" in your Google account settings under Security.
 
-2. Configure the script:  
-   - Update email credentials and recipient details in `send_keylog_email.py`.  
-   - Verify that the receiver consents to testing.  
+4. **Verify Log File Configuration**:
+   The keylogger logs keystrokes to a file named `log.txt` in the same directory. Ensure you have write permissions for the directory.
 
-3. Share the keylogger script via email or other manual distribution methods.  
 
-4. The receiver must manually install and run the keylogger script on their system.  
+### Running the Keylogger
+1. **Start the Script**:
+   Execute the script in your terminal:
+   ```bash
+   python keylogger.py
+   ```
+2. The keylogger will:
+   - Log keystrokes to `log.txt` every 60 seconds.
+   - Send logs via email every 5 minutes.
 
-5. Logs will be stored remotely and sent back to the developer's system.  
+3. **Stop the Script**:
+   Use `Ctrl + C` in the terminal to terminate the script.
 
 ## How It Works  
 
@@ -64,7 +83,9 @@ pip install pynput
 This project is designed to educate about the risks of phishing and malware. It should only be used:  
 - In controlled environments.  
 - With explicit permission from all participants.  
-- As part of ethical hacking or cybersecurity awareness campaigns.  
+- As part of ethical hacking or cybersecurity awareness campaigns.
+- Avoid committing email credentials or sensitive data to the repository.
+-  Any misuse is strictly discouraged.
 
 Misuse of this software is strictly prohibited.  
 
