@@ -72,8 +72,11 @@ Send logs via email every 5 minutes.
 
 ## How It Works
 
-Keylogger: Logs keystrokes locally and sends them to the developer's system.
-Email Distribution: Attaches the keylogger code to an email and sends it to the receiver ( manual installation ).
+- **Keylogger:** Logs keystrokes locally and sends them to the developer's system.
+- **Email Distribution:** Attaches the keylogger code to an email and sends it to the receiver ( manual installation ).
+- **send_keylog_email.py:** Sends the saved log.txt to other device via temporary email.
+- **keylogger_with_email.py:** Sends the keylogger file(current file) to other device - can be sent with temporary mail providers.
+- **warning!** The file cannot be send via authorised mail providers as it may detect virus, can cause damage .
 
 ## Ethical Practices
 This project is designed to educate about the risks of phishing and malware. It should only be used:
